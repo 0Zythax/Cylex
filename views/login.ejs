@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="../css/login.css"></link>
+    <link rel="stylesheet" href="/assets/css/login.css"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
     <form action="/login" method="post" id="loginForm">
         <% if (locals.error) { %>
         <div class="error">
-            <img src="/assets/warning.png"></img>
+            <img src="/assets/img/warning.png"></img>
             <p><%= error %></p>
         </div>
         <% } %>
