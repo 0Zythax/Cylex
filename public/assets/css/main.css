@@ -1,0 +1,41 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #202020;
+}
+
+header {
+    display: grid;
+    grid-auto-flow: column;
+    padding-left: 20px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: rgb(61, 61, 61);
+}
+
+header button {
+    background-color: #666666;
+    border: solid rgb(41, 41, 41) 1px;
+    color: white;
+    margin: 5px;
+}
+
+header button:hover {
+    background-color: #414141;
+}
+
+header h2 {
+    color: rgb(109, 109, 109);
+}
+
+main {
+    background-color: rgb(61, 61, 61);
+    padding: 5px;
+    padding-left: 15px;
+    margin: 25px;
+}
+
+main h2{
+    color: rgb(109, 109, 109);
+}
