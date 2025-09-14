@@ -3,7 +3,7 @@
 const express = require("express")
 const router = express.Router()
 
-const loginRoute = require("./routes/login.js")
+const loginRoute = require("../routes/login.js")
 const pageNotFound = require("../middleware/pageNotFound.js")
 
 router.use("/login", loginRoute)
