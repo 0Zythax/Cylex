@@ -75,3 +75,10 @@ main {
     grid-template-areas: "tab tab tab tab";
     row-gap: 1em;
 }
+
+footer {
+    display: flex;
+    z-index: 2;
+    position: sticky;
+    top: 0vh;
+}
