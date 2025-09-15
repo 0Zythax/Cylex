@@ -1,20 +1,20 @@
 window.addEventListener('load', function () {
-    fetch('/assets/js/configuration.json')
+    fetch('/games/configuration.json')
     .then(responce => responce.json())
     .then(responce => {
-        for (let i = 0; i < Object.keys(responce).length; i++) {
+        var length = Object.keys(responce).length;
+        this.document.getElementById("gameCount").innerHTML = "Games: " + length
+
+        for (let i = 0; i < length; i++) {
             let data = responce[i];
             let element = this.document.getElementById("gamesContainer")
 
             let container = this.document.createElement("div")
             container.className = "tab"
-
             let button = this.document.createElement("button")
             button.className = "tabButton"
-
             let image = this.document.createElement("img")
             image.src = data.imageurl;
-
             let name = this.document.createElement("p")
             name.innerHTML = data.name;
 
@@ -23,24 +23,10 @@ window.addEventListener('load', function () {
             container.appendChild(name)
             container.appendChild(button)
 
+            button.addEventListener("click", () => {
 
-            /*
-            <div class="tab">
-                    <img src="/assets/img/template.jpg">
-                    <p>Game name</p>
-                    <button class="tabButton">t</button>
-            </div>
-            */
+            })
         }
     })
     .catch(message => alert("Failed to load games! " + message))
-
-    /*
-    var buttons = this.document.querySelectorAll(".tabButton")
-    buttons.forEach((button) => {
-        button.addEventListener("click", function(){ 
-
-        }); 
-    })
-    */
 })
