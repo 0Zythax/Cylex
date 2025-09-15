@@ -1,4 +1,8 @@
 # Cylex
-A project created in Node.js to circumvent web filters.
-Easy to deploy, contains lots of games.
+Written in node.js, uses express as a backend.
+A project made to play unblocked games, inspired from sites such as gn-math and Vapor.
 
+## How to set up
+Download packages: npm install.
+Make .env secrets file.
+Use a process manager such as pm2 to run the server.
