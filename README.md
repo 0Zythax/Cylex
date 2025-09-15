@@ -1,4 +1,5 @@
 # Cylex
+# THIS IS INCOMPLETE AND IS CURRENTLY STILL IN DEVELOPMENT!
 Written in node.js, uses express as a backend.
 A project made to play unblocked games, inspired from sites such as gn-math and Vapor.
 
