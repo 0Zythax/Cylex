@@ -11,6 +11,53 @@ body {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 2.5rem, auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.box {
+    display: block;
+    background-color: rgb(36, 36, 36);
+    border-radius: 4px;
+    border: 0px solid black;
+    padding: 0.5em 1em;
+    width: 50em;
+    max-width: 50em;
+}
+
+.box h1 {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.tab {
+    display: inline-block;
+    margin: 0;
+    width: 23.5%;
+    background-color: rgb(53, 53, 53);
+    border-radius: 4px;
+    border: 0px solid black;
+}
+
+.tab p {
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.tab img {
+    width: 95%;
+    margin: 0 auto;
+}
+
+h2, p {
+    color: white;
+}
+
+main {
+    display: flex;
+    margin: 1em auto;
+    justify-content: center;
 }
