@@ -85,6 +85,7 @@ nav {
     height: 100%;
     z-index: 2;
     background: none;
+    border: none;
 }
 
 .tab:hover {
