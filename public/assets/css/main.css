@@ -16,6 +16,16 @@ header {
     justify-content: center;
 }
 
+h2, p {
+    color: white;
+}
+
+main {
+    display: flex;
+    margin: 1em auto;
+    justify-content: center;
+}
+
 .box {
     display: block;
     background-color: rgb(36, 36, 36);
@@ -52,12 +62,7 @@ header {
     margin: 0 auto;
 }
 
-h2, p {
-    color: white;
-}
-
-main {
+#gamesContainer {
     display: flex;
-    margin: 1em auto;
-    justify-content: center;
+    justify-content: space-around;
 }
