@@ -1,25 +1,25 @@
 {
-    "0" : {
-        "name": "Buckshot Something",
-        "imageurl": "/assets/img/buckshot.png",
-        "gameurl": "/games/buckshot"
+    "0": {
+        "name": "Bad Piggies",
+        "imageurl": "/assets/img/badPiggies.jpg",
+        "gameurl": "/games/badpiggies"
     },
 
-    "1" : {
-        "name": "Buckshot Something",
-        "imageurl": "/assets/img/buckshot.png",
-        "gameurl": "/games/buckshot"
+    "1": {
+        "name": "Bad Piggies",
+        "imageurl": "/assets/img/badPiggies.jpg",
+        "gameurl": "/games/badpiggies"
     },
 
-    "2" : {
-        "name": "Buckshot Something",
-        "imageurl": "/assets/img/buckshot.png",
-        "gameurl": "/games/buckshot"
+    "2": {
+        "name": "Bad Piggies",
+        "imageurl": "/assets/img/badPiggies.jpg",
+        "gameurl": "/games/badpiggies"
     },
 
-    "3" : {
-        "name": "Buckshot Something",
-        "imageurl": "/assets/img/buckshot.png",
-        "gameurl": "/games/buckshot"
+    "3": {
+        "name": "Bad Piggies",
+        "imageurl": "/assets/img/badPiggies.jpg",
+        "gameurl": "/games/badpiggies"
     }
 }

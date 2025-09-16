@@ -2,6 +2,7 @@ let gameOpen = false;
 
 window.addEventListener('load', function () {
     const gameFrame = this.document.getElementsByClassName("game hidden")[0];
+    const gameContainer = this.document.getElementById("gameContainer");
     const exitGameButton = this.document.getElementById("exitButton");
     const fullscreenButton = this.document.getElementById("fsButton");
     const mainFrame = this.document.getElementById("main");
@@ -11,10 +12,19 @@ window.addEventListener('load', function () {
             gameFrame.className = "game";
             mainFrame.className = "hidden";
         } else {
+            gameContainer.innerHTML = "";
             gameFrame.className = "game hidden";
             mainFrame.className = "";
         }
     }
+
+    function initGame(url) {
+        gameContainer.innerHTML = `<iframe src="${url}"></iframe>`
+    }
+
+    fullscreenButton.addEventListener("click", () => {
+        gameContainer.requestFullscreen();
+    })
 
     exitGameButton.addEventListener("click", () => {
         toggleGameScreen(false)
@@ -46,6 +56,7 @@ window.addEventListener('load', function () {
 
             button.addEventListener("click", () => {
                 toggleGameScreen(true)
+                initGame(data.gameurl)
             })
         }
     })
