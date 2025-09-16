@@ -26,7 +26,21 @@ header {
 #navbar {
     display: flex;
     justify-content: space-evenly;
-    padding: 0.5em;
+    padding-top: 0;
+    padding-bottom: 0.5em;
+}
+
+#navbar button {
+    background-color: rgb(48, 48, 48);
+    border: solid 1px rgb(82, 82, 82);
+    border-radius: 0.4em;
+    padding: 0.5em 2em;
+    color: white;
+}
+
+#navbar button:hover {
+    border: solid 1px white;
+    transition-duration: 0.2s;
 }
 
 #title {
@@ -37,7 +51,10 @@ header {
 
 #games {
     margin: 0.5em auto;
-    padding: 0.5em;
+    padding-top: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
     max-width: 50em;
     background-color: rgb(36, 36, 36);
     border-radius: 0.5em;
@@ -52,6 +69,46 @@ header {
     column-gap: 0.2em;
     grid-template-areas: "tab tab tab tab";
     row-gap: 1em;
+}
+
+.game {
+    display: flex;
+    background-color: rgb(34, 34, 34);
+    margin: 0.5em auto;
+    width: 75%;
+}
+
+#gameContainer {
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: auto;
+    height: calc(90vh - 100px - 20px - 10px);
+    width: 100vw;
+}
+
+#gameContainerButtons {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#gameContainerButtons button {
+    width: 5em;
+    height: 5em;
+    background-color: rgb(48, 48, 48);
+    border: solid 1px rgb(82, 82, 82);
+    color: white;
+    border-radius: 0.4em;
+}
+
+#gameContainer iframe {
+    width: 100%;
+    height: 96%;
+    border: solid 1px rgb(82, 82, 82);
+    border-radius: 0.4em;
 }
 
 .box {
@@ -102,4 +159,8 @@ header {
     translate: 0 -0.25em;
     transition-duration: 0.1s;
     border: solid white 1px;
+}
+
+.hidden {
+    display: none;
 }

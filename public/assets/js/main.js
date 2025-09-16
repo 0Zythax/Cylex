@@ -1,4 +1,25 @@
+let gameOpen = false;
+
 window.addEventListener('load', function () {
+    const gameFrame = this.document.getElementsByClassName("game hidden")[0];
+    const exitGameButton = this.document.getElementById("exitButton");
+    const fullscreenButton = this.document.getElementById("fsButton");
+    const mainFrame = this.document.getElementById("main");
+
+    function toggleGameScreen(toggle) {
+        if (toggle == true) {
+            gameFrame.className = "game";
+            mainFrame.className = "hidden";
+        } else {
+            gameFrame.className = "game hidden";
+            mainFrame.className = "";
+        }
+    }
+
+    exitGameButton.addEventListener("click", () => {
+        toggleGameScreen(false)
+    })
+
     fetch('/games/configuration.json')
     .then(responce => responce.json())
     .then(responce => {
@@ -24,7 +45,7 @@ window.addEventListener('load', function () {
             container.appendChild(button)
 
             button.addEventListener("click", () => {
-
+                toggleGameScreen(true)
             })
         }
     })
