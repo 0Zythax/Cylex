@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
         toggleGameScreen(false)
     })
 
-    fetch('/games/configuration.json')
+    fetch('/assets/js/configuration.json')
     .then(responce => responce.json())
     .then(responce => {
         var length = Object.keys(responce).length;

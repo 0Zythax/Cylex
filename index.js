@@ -3,8 +3,8 @@
 
 const express = require("express")
 const session = require("express-session")
-const helmet = require("helmet")
 const application = express()
+const fs = require("fs");
 
 application.set("view engine", "ejs")
 application.use(session({
@@ -12,10 +12,10 @@ application.use(session({
     resave: false,
     saveUninitialized: true,
     cookie: {secure: false, maxAge: 60000}
-})); application.use(helmet())
+}));
 
 const routeOrchestrator = require("./routes/main.js")
 application.use(routeOrchestrator)
 application.listen(process.env.PORT, () => {
-    console.log("Application started")
+    console.log("Cylex started on port 3000 [express.js]")
 })
