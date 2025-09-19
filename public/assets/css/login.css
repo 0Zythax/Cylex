@@ -44,3 +44,13 @@ form {
     border-radius: 5px;
     text-align: center;
 }
+
+input {
+    margin: 0;
+    padding-bottom: 0.5em;
+    background-color: rgb(48, 48, 48);
+    border: solid 1px white;
+    border-radius: 0.4em;
+    padding: 0.2em 0.5em;
+    color: white;
+}

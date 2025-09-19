@@ -1,5 +1,3 @@
-let gameOpen = false;
-
 window.addEventListener('load', function () {
     const gameFrame = this.document.getElementsByClassName("game hidden")[0];
     const gameContainer = this.document.getElementById("gameContainer");
@@ -40,8 +38,11 @@ window.addEventListener('load', function () {
     function initGame(url) {
         gameContainer.innerHTML = `<iframe src="${url}"></iframe>`
     }
+    
+    if (localStorage.getItem('theme') === null) {
+        localStorage.setItem('theme', 'dark');
+    }
 
-    this.localStorage.setItem('theme', 'dark');
     themeSelect.addEventListener("change", () => {
         if (themeSelect.value === "dark") {
             document.documentElement.setAttribute('theme', 'dark');

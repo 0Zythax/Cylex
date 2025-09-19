@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>An error has occured</title>
+    <link rel="stylesheet" href="/assets/css/error.css">
+    <title>Error</title>
 </head>
 <body>
-    <p><% codes = {'404' : "Page not found", '500' : 'Server error'}; return codes[locals.errorCode] || locals.errorCode %></p>
+    <h1>An error has occured!</h1>
+    <div id="errorContainer">
+        <p>Server responded with error code: <%= locals.errorCode || "500"%></p>
+        <p><%= locals.errorMessage || "Internal Server Error" %></p>
+    </div>
 </body>
 </html>

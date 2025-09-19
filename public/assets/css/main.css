@@ -84,10 +84,9 @@ header {
 #gameContainer {
     padding-left: 1em;
     padding-top: 1em;
-    padding-bottom: 1em;
     margin: auto;
     height: calc(90vh - 100px - 20px - 10px);
-    width: 100vw;
+    width: 100%;
 }
 
 #gameContainerButtons {
