@@ -12,7 +12,7 @@ router.post("/", express.urlencoded({ extended: false }), (req, res) => {
             })
         })
     } else {
-        res.render("../views/login.ejs", {error: "Incorrect key."})
+        res.render("../views/login.ejs", {error: "Incorrect key.", lastPW: req.body.key || ""})
     }
 })
 

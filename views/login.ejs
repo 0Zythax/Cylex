@@ -16,7 +16,7 @@
         <% } %>
         <form action="/login" method="post">
             <p>Enter access key.</p>
-            <input class="input" name="key" type="password">
+            <input class="input" name="key" type="password" value = <%= locals.lastPW %>>
             <input class="button" type="submit" value="Enter">
         </form>
     </div>

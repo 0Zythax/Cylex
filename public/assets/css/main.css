@@ -16,7 +16,7 @@ header {
     margin: 0 auto;
     padding: 0;
     justify-content: center;
-    background-color: rgb(36, 36, 36);
+    background-color: #363636;
     border-radius: 0.5em;
     max-width: 50em;
 }
@@ -54,7 +54,7 @@ header {
     padding-right: 1em;
     padding-bottom: 0.5em;
     max-width: 50em;
-    background-color: rgb(36, 36, 36);
+    background-color: #363636;
     border-radius: 0.5em;
 }
 
@@ -71,7 +71,7 @@ header {
 
 .game {
     display: flex;
-    background-color: rgb(34, 34, 34);
+    background-color: #363636;
     margin: 0.5em auto;
     width: 75%;
 }
@@ -111,7 +111,7 @@ header {
 
 .box {
     padding: 0.5em 1em;
-    background-color: rgb(36, 36, 36);
+    background-color: #363636;
     border-radius: 4px;
 }
 
@@ -124,7 +124,7 @@ header {
 .tab {
     display: inline-block;
     margin: 0;
-    background-color: rgb(53, 53, 53);
+    background-color: #363636;
     border: 1px solid gray;
     border-radius: 4px;
 }
