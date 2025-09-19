@@ -3,6 +3,14 @@
     font-optical-sizing: auto;
     font-weight: 5px;
     font-style: normal;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -10,47 +18,29 @@ body {
     background: linear-gradient(90deg, rgba(66, 187, 189, 1) 0%, rgba(87, 199, 133, 1) 85%);
 }
 
-#loginForm {
+form {
     display: flex;
     flex-direction: column;
-    padding: 0px 10px 10px 10px;
-    background-color: rgb(36, 36, 36);
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    gap: 10px;
 }
 
-#loginForm p {
+#formContainer {
+    padding: 20px;
+    background-color: #363636;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 400px;
+}
+
+#formContainer p{
     color: white;
 }
 
-.input {
+#error {
+    background-color: rgb(70, 70, 70);
     padding: 10px;
-    color: white;
-    background-color: rgb(56, 56, 56);
-    border: solid white 1px;
-}
-
-.button {
-    padding: 5px;
-    color: white;
-    margin-top: 5px;
-    background-color: rgb(56, 56, 56);
-    border: solid white 1px;
-}
-
-.error {
-    display: inline-flex;
-    flex-direction: row;
-    flex-flow: row;
-    height: 20px;
-    padding: 5px;
-}
-
-.error p {
-    max-width: 350px;
-    margin-top: 1px;
-    padding-left: 8px;
-    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
 }

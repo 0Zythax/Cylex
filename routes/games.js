@@ -1,4 +1,6 @@
 const express = require("express")
+const fs = require("fs")
+
 const router = express.Router()
 const protectedPage = require("../middleware/authorization.js")
 

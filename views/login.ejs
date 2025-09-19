@@ -8,16 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="/login" method="post" id="loginForm">
+    <div id="formContainer">
         <% if (locals.error) { %>
-        <div class="error">
-            <img src="/assets/img/warning.png"></img>
-            <p><%= error %></p>
-        </div>
+            <div id="error">
+                <p><%= error %></p>
+            </div>
         <% } %>
-        <p>Enter access key.</p>
-        <input class="input" name="key" type="password">
-        <input class="button" type="submit" value="Enter">
-    </form>
+        <form action="/login" method="post">
+            <p>Enter access key.</p>
+            <input class="input" name="key" type="password">
+            <input class="button" type="submit" value="Enter">
+        </form>
+    </div>
 </body>
 </html>
