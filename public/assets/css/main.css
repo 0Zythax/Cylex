@@ -6,6 +6,11 @@
 }
 
 body {
+    --frame-backdrop: var(--frame-backdrop);
+    --button-backdrop: var(--button-backdrop);
+    --hover-color: var(--hover-color);
+    --text: var(--text);
+
     background: #42bbbd;
     background: linear-gradient(90deg, rgba(66, 187, 189, 1) 0%, rgba(87, 199, 133, 1) 85%);
 }
@@ -16,7 +21,7 @@ header {
     margin: 0 auto;
     padding: 0;
     justify-content: center;
-    background-color: #363636;
+    background-color: var(--frame-backdrop);
     border-radius: 0.5em;
     max-width: 50em;
 }
@@ -29,21 +34,21 @@ header {
 }
 
 #navbar button {
-    background-color: rgb(48, 48, 48);
-    border: solid 1px rgb(82, 82, 82);
+    background-color: var(--button-backdrop);
+    border: solid 1px gray;
     border-radius: 0.4em;
     padding: 0.5em 2em;
-    color: white;
+    color: var(--text);
 }
 
 #navbar button:hover {
-    border: solid 1px white;
+    border: solid 1px var(--hover-color);
     transition-duration: 0.2s;
 }
 
 #title {
     text-align: center;
-    color: white;
+    color: var(--text);
     margin: 0;
 }
 
@@ -54,12 +59,12 @@ header {
     padding-right: 1em;
     padding-bottom: 0.5em;
     max-width: 50em;
-    background-color: #363636;
+    background-color: var(--frame-backdrop);
     border-radius: 0.5em;
 }
 
 #games h2, p {
-    color: white;
+    color: var(--text);
 }
 
 #gamesContainer {
@@ -71,7 +76,7 @@ header {
 
 .game {
     display: flex;
-    background-color: #363636;
+    background-color: var(--frame-backdrop);
     margin: 0.5em auto;
     width: 75%;
 }
@@ -96,27 +101,27 @@ header {
 #gameContainerButtons button {
     width: 5em;
     height: 5em;
-    background-color: rgb(48, 48, 48);
-    border: solid 1px rgb(82, 82, 82);
-    color: white;
+    background-color: var(--button-backdrop);
+    border: solid 1px gray;
+    color: var(--text);
     border-radius: 0.4em;
 }
 
 #gameContainer iframe {
     width: 100%;
     height: 96%;
-    border: solid 1px rgb(82, 82, 82);
+    border: solid 1px gray;
     border-radius: 0.4em;
 }
 
 .box {
     padding: 0.5em 1em;
-    background-color: #363636;
+    background-color: var(--frame-backdrop);
     border-radius: 4px;
 }
 
 .box h1 {
-    color: white;
+    color: var(--text);
     margin: auto;
     text-align: center;
 }
@@ -124,13 +129,13 @@ header {
 .tab {
     display: inline-block;
     margin: 0;
-    background-color: #363636;
+    background-color: var(--frame-backdrop);
     border: 1px solid gray;
     border-radius: 4px;
 }
 
 .tab p {
-    color: white;
+    color: var(--text);
     margin: 0;
     padding: 0.5em;
     text-align: center;
@@ -158,9 +163,35 @@ header {
 .tab:hover {
     translate: 0 -0.25em;
     transition-duration: 0.1s;
-    border: solid white 1px;
+    border: solid var(--hover-color) 1px;
 }
 
 .hidden {
     display: none;
+}
+
+#settingsContainer {
+    margin: 0.5em auto;
+    padding: 0.5em 1em;
+    max-width: 50em;
+    background-color: var(--frame-backdrop);
+    border-radius: 0.5em;
+    color: var(--text);
+}
+
+.setting {
+    margin: 0.5em 0;
+}
+
+.setting h2 {
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+.setting select {
+    background-color: var(--button-backdrop);
+    border: solid 1px var(--hover-color);
+    border-radius: 0.4em;
+    padding: 0.2em 0.5em;
+    color: var(--text);
 }
