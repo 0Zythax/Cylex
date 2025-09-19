@@ -1,22 +1,29 @@
 {
-    "0": {
-        "name": "Bad Piggies",
-        "imageurl": "/assets/img/badPiggies.jpg",
-        "gameurl": "/games/badpiggies"
-    },
-    "1": {
-        "name": "Bad Piggies",
-        "imageurl": "/assets/img/badPiggies.jpg",
-        "gameurl": "/games/badpiggies"
-    },
-    "2": {
-        "name": "Bad Piggies",
-        "imageurl": "/assets/img/badPiggies.jpg",
-        "gameurl": "/games/badpiggies"
-    },
-    "3": {
-        "name": "Bad Piggies",
-        "imageurl": "/assets/img/badPiggies.jpg",
-        "gameurl": "/games/badpiggies"
-    }
+  "0": { "name": "13 Days After", "imageurl": "", "gameurl": "/games/13daysafter" },
+  "1": { "name": "40x Escape", "imageurl": "", "gameurl": "/games/40xescape" },
+  "2": { "name": "Bad Eggs 2", "imageurl": "", "gameurl": "/games/badeggs2" },
+  "3": { "name": "Bad Piggies", "imageurl": "/assets/img/badPiggies.jpg", "gameurl": "/games/badpiggies" },
+  "4": { "name": "Blosics 2", "imageurl": "", "gameurl": "/games/blosics2" },
+  "5": { "name": "Bug on a Wire", "imageurl": "", "gameurl": "/games/bugonawire" },
+  "6": { "name": "Code Lyoko Galaxy", "imageurl": "", "gameurl": "/games/codelyokogalaxy" },
+  "7": { "name": "Crash Test Launcher", "imageurl": "", "gameurl": "/games/crashtestlauncher" },
+  "8": { "name": "Doodle God", "imageurl": "", "gameurl": "/games/doodlegod" },
+  "9": { "name": "Drag Race Demon", "imageurl": "", "gameurl": "/games/dragracedemon" },
+  "10": { "name": "Exit Path", "imageurl": "", "gameurl": "/games/exitpath" },
+  "11": { "name": "Fireboy and Watergirl Crystal Temple", "imageurl": "", "gameurl": "/games/fawcrystaltemple" },
+  "12": { "name": "Fireboy and Watergirl Forest Temple", "imageurl": "", "gameurl": "/games/fawforesttemple" },
+  "13": { "name": "Fireboy and Watergirl Ice Temple", "imageurl": "", "gameurl": "/games/fawicetemple" },
+  "14": { "name": "Fireboy and Watergirl Light Temple", "imageurl": "", "gameurl": "/games/fawlighttemple" },
+  "15": { "name": "Heli Attack 2", "imageurl": "", "gameurl": "/games/heliattack2" },
+  "16": { "name": "Heli Attack 3", "imageurl": "", "gameurl": "/games/heliattack3" },
+  "17": { "name": "Indestructotank 2", "imageurl": "", "gameurl": "/games/indestructotank2" },
+  "18": { "name": "Kawairun 2", "imageurl": "", "gameurl": "/games/kawairun2" },
+  "19": { "name": "Lyoko Race 2", "imageurl": "", "gameurl": "/games/lyokorace2" },
+  "20": { "name": "Please Stop Running", "imageurl": "", "gameurl": "/games/pleasestoprunning" },
+  "21": { "name": "Robokill Titan Prime", "imageurl": "", "gameurl": "/games/robokilltitan_prime" },
+  "22": { "name": "Super Mario Defence", "imageurl": "", "gameurl": "/games/supermariodefence" },
+  "23": { "name": "Sushi Cat 1", "imageurl": "", "gameurl": "/games/sushicat1" },
+  "24": { "name": "Sushi Cat 4", "imageurl": "", "gameurl": "/games/sushicat4" },
+  "25": { "name": "The Elder Temple Escape", "imageurl": "", "gameurl": "/games/theeldertempleescape" },
+  "26": { "name": "The World's Hardest Game 1", "imageurl": "", "gameurl": "/games/theworldshardestgame1" }
 }

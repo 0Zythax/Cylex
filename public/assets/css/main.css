@@ -138,8 +138,10 @@ header {
 
 .tab img {
     display: flex;
+    width: 10vw;
+    height: 10vh;
+    object-fit: cover;
     margin: auto;
-    width: 95%;
     justify-self: center;
 }
 

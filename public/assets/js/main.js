@@ -45,7 +45,12 @@ window.addEventListener('load', function () {
             let button = this.document.createElement("button")
             button.className = "tabButton"
             let image = this.document.createElement("img")
-            image.src = data.imageurl;
+            console.log(data.imageurl.length)
+            if (data.imageurl.length <= 0) {
+                image.src = "/assets/img/notFound.jpg"
+            } else {
+                image.src = data.imageurl;
+            }
             let name = this.document.createElement("p")
             name.innerHTML = data.name;
 
