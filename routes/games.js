@@ -1,10 +1,8 @@
 const express = require("express")
+const router = express.Router()
 const fs = require("fs")
 
-const router = express.Router()
-const protectedPage = require("../middleware/authorization.js")
-
-router.get("/:game", protectedPage, (req, res) => {
+router.get("/:game", require("../middleware/authorization.js"), (req, res) => {
     const game = req.params.game;
     
     if (!game) {

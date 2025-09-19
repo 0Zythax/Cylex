@@ -1,7 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const protectedPage = require("../middleware/authorization.js")
 
-router.get("/", protectedPage)
+router.get("/", require("../middleware/authorization.js"));
 
 module.exports = router

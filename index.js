@@ -4,7 +4,6 @@
 const express = require("express")
 const session = require("express-session")
 const application = express()
-const fs = require("fs");
 
 application.set("view engine", "ejs")
 application.use(session({
